@@ -20,6 +20,9 @@
 </template>
  
 <script>
+
+import Swal from "sweetalert2";
+
     export default {
         data() {
             return {
@@ -39,7 +42,8 @@
                 this.axios
                     .post(`http://localhost:8000/api/post/update/${this.$route.params.id}`, this.post)
                     .then((response) => {
-                        this.$router.push({name: 'home'});
+                        this.$router.push({name: 'home'});                     
+                        Swal.fire('Successfully updated', ' ', 'success')
                     });
             }
         }
