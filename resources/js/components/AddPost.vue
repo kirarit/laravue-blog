@@ -20,6 +20,7 @@
 </template>
  
 <script>
+import Swal from "sweetalert2";
     export default {
         data() {
             return {
@@ -34,7 +35,7 @@
                     .then(response => (
                         this.$router.push({name: 'home'})
                         // console.log(response.data)
-                    ))
+                    )); Swal.fire('Successfully added', ' ', 'success')
                     .catch(error => console.log(error))
                     .finally(() => this.loading = false)
             }
