@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="main-content">
     <h3 class="text-center">All Posts</h3>
     <table class="table table-bordered">
       <thead>
