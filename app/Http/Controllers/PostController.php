@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
  
 use Illuminate\Http\Request;
-use App\Http\Resources\PostCollection;
+use App\Http\Resources\PostResource;
 use App\Post;
  
 class PostController extends Controller
@@ -13,6 +13,7 @@ class PostController extends Controller
     {
         $posts = Post::all()->toArray();
         return array_reverse($posts);
+        // return PostResource::collection(Post::all()->toArray());
     }
  
     // add post

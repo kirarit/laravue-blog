@@ -7,7 +7,7 @@
           <th>Title</th>
           <th>Description</th>
           <th>Created At</th>
-          <th>Updated At</th>
+          <!-- <th>Updated At</th> -->
           <th>Actions</th>
         </tr>
       </thead>
@@ -16,7 +16,7 @@
           <td>{{ post.title }}</td>
           <td>{{ post.description }}</td>
           <td>{{ post.created_at }}</td>
-          <td>{{ post.updated_at }}</td>
+          <!-- <td>{{ post.updated_at }}</td> -->
           <td>
             <div class="btn-group" role="group">
               <router-link

@@ -23896,8 +23896,6 @@ var render = function() {
             _vm._v(" "),
             _c("td", [_vm._v(_vm._s(post.created_at))]),
             _vm._v(" "),
-            _c("td", [_vm._v(_vm._s(post.updated_at))]),
-            _vm._v(" "),
             _c("td", [
               _c(
                 "div",
@@ -23947,8 +23945,6 @@ var staticRenderFns = [
         _c("th", [_vm._v("Description")]),
         _vm._v(" "),
         _c("th", [_vm._v("Created At")]),
-        _vm._v(" "),
-        _c("th", [_vm._v("Updated At")]),
         _vm._v(" "),
         _c("th", [_vm._v("Actions")])
       ])
